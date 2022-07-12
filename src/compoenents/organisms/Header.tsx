@@ -1,13 +1,16 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Avatar from "../atoms/images/Avatar";
 import Logo from "../atoms/vectors/Logo";
 
 export const Header = () => {
   const [login, setLogin] = useState(true);
+  const { pathname } = useLocation();
   const handleLogin = () => {
     setLogin(!login);
   };
+  console.log(pathname);
+
   return (
     <header className="bg-headerBg w-full h-[7.3125rem] flex items-center ">
       <nav className=" flex items-center justify-center mx-10 w-full">
@@ -16,7 +19,7 @@ export const Header = () => {
             <Logo width={"12.625rem"} height={"3.5rem"} />
           </Link>
 
-          {login && (
+          {login && pathname != "/profile" && (
             <Link to="/profile">
               <Avatar
                 width={"11.875rem"}
