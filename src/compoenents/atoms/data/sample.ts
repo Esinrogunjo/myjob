@@ -44,7 +44,7 @@ export const jobs = [
       id: 1,
     },
     company: {
-      name: "Item7 Party Rice & Shawama",
+      name: "Item7 Party Rice ",
       about: "Restraunt and Eatry",
       address: "Ilorin, Nigeria",
     },

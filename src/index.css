@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -46,6 +47,11 @@ textarea:focus {
 .shadowContact {
   box-shadow: 0px -4px 15px rgba(255, 255, 255, 0.39),
     0px 4px 11px rgba(29, 35, 25, 0.35);
+}
+@media (max-width: 750px) {
+  :root {
+    font-size: 10px;
+  }
 }
 
 @tailwind components;

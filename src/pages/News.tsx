@@ -6,19 +6,20 @@ import SingleJob from "../compoenents/organisms/news/SingleJob";
 import Home from "./Home";
 import { jobs } from "../compoenents/atoms/data/sample";
 
-import Codevillage from "../compoenents/atoms/images/cv.png";
-import Item7 from "../compoenents/atoms/images/item7.png";
-import Femtech from "../compoenents/atoms/images/femtech.png";
-import House from "../compoenents/atoms/images/house.png";
-
 const News = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen overflow-auto">
       <Header />
       <NewsTop />
-      {jobs.map((job, i) => (
-        <SingleJob job={job} key={`JOb-${i}`} />
-      ))}
+      <div>
+        <h2 className="block md:hidden font-sans text-primary font-medium text-xl leading-10 ml-4 mb-[1.625rem]">
+          Latest news &amp; discussions
+        </h2>
+
+        {jobs.map((job, i) => (
+          <SingleJob job={job} key={`JOb-${i}`} />
+        ))}
+      </div>
 
       <Footer />
     </div>

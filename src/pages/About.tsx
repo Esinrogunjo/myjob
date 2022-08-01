@@ -6,7 +6,7 @@ import { Header } from "../compoenents/organisms/Header";
 
 const About = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen overflow-auto">
       <Header />
       <AboutTop />
       <AboutBody />

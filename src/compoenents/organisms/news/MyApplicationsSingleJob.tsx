@@ -1,13 +1,7 @@
-import React, { useState } from "react";
-import Codevillage from "../../atoms/images/cv.png";
-import Item7 from "../../atoms/images/item7.png";
-import Femtech from "../../atoms/images/femtech.png";
-import House from "../../atoms/images/house.png";
+import { useState } from "react";
 import Share from "../../atoms/images/share.png";
-import ShareIcon from "../../atoms/vectors/ShareIcon";
 import Button from "../../atoms/forms/Button";
 import { Link } from "react-router-dom";
-import { TwitterShareButton } from "react-share";
 import ShareModal from "../../molecules/ShareModal";
 
 export type jobType = {
@@ -32,7 +26,7 @@ export type jobType = {
   };
 };
 
-const SingleJob = ({ job }: any) => {
+const MyApplicationsSingleJob = ({ job }: any) => {
   const jobDetails = job.job;
   const company = job.company;
   const summary = job.summary;
@@ -48,9 +42,9 @@ const SingleJob = ({ job }: any) => {
   };
 
   return (
-    <div className=" mx-4  mb-[3.75rem] md:mx-auto rounded-[0.625rem] border-[#8B8B8B] border-[0.5px] flex flex-col max-w-[78.5625rem]  pb-[2.125rem]">
+    <div className=" mb-[3.75rem] mx-auto rounded-[0.625rem] border-[#8B8B8B] border-[0.5px] flex flex-col max-w-[78.5625rem]  pb-[2.125rem]">
       <div className="w-full mt-10 border-b-[0.5px] border-b-[#8B8B8B] px-10 flex justify-between mb-[1.0625rem]">
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <span className="text-primary font-medium text-[2rem] leading-[2.055625rem] ">
             {jobDetails.name}
           </span>
@@ -76,13 +70,12 @@ const SingleJob = ({ job }: any) => {
           </span>
         </div>
       </div>
-
       <div className="grid " style={{ gridTemplateColumns: "auto auto" }}>
         <img
           src={summary.image}
-          className="hidden md:block w-[12.0625rem] h-[12.0625rem] ml-10 mt-[2.875rem]"
+          className="w-[12.0625rem] h-[12.0625rem] ml-10 mt-[2.875rem]"
         />
-        <div className=" mt-[1.875rem] flex flex-col ml-[2.9375rem] ">
+        <div className="mt-[1.875rem] flex flex-col ml-[2.9375rem] ">
           <div className="flex flex-col ">
             <span className="text-primary font-medium text-base tracking-[0.5px] mb-2 leading-[1.83125rem]">
               Job summary
@@ -91,9 +84,12 @@ const SingleJob = ({ job }: any) => {
               {summary.about}
             </span>
           </div>
-          <div className="flex flex-col md:grid mt-6  md:grid-cols-2  ">
-            <div className=" flex   ">
-              <div className="flex flex-col text-[#272727] font-normal text-xl leading-[1.875rem]">
+          <div
+            className="grid mt-6   "
+            style={{ gridTemplateColumns: "22.6875rem auto" }}
+          >
+            <div className=" flex    ">
+              <div className="flex flex-col text-[#272727] font-normal text-xl leading-[1.875rem] ">
                 <div className="flex items-center">
                   <div className="flex h-[10px] w-[10px] rounded-full bg-[#000] mr-2 ml-1"></div>
 
@@ -116,11 +112,13 @@ const SingleJob = ({ job }: any) => {
                 <span>{summary.requirement.length}</span>
               </div>
             </div>
-            <div className="flex items-center justify-end md:mr-[2.51rem]">
-              <div className="  md:mb-8 mr-[3.25rem] flex items-start justify-center  h-full">
-                <ShareIcon
+            <div className="flex items-center">
+              <div className=" relative mb-8 mr-[3.25rem]">
+                <img
+                  src={Share}
+                  alt=""
                   onClick={() => setShowModal(!showModal)}
-                  className="cursor-pointer w-10 h-10 my-auto"
+                  className="cursor-pointer"
                 />
                 {showModal && (
                   <ShareModal
@@ -130,10 +128,10 @@ const SingleJob = ({ job }: any) => {
                   />
                 )}
               </div>
-              <Link to={`/news/${jobDetails.id}`} className="mr-10">
+              <Link to={`/news/${jobDetails.id}`}>
                 <Button
                   label="See more"
-                  className="bg-primary text-baseText font-medium text-xl rounded-bottonRadius p-6  md:py-[1.53125rem] md:px-[5.4375rem] flex items-center justify-center"
+                  className="bg-primary text-baseText font-medium text-xl rounded-bottonRadius py-[1.53125rem] px-[5.4375rem] flex items-center justify-center"
                 />
               </Link>
             </div>
@@ -144,4 +142,4 @@ const SingleJob = ({ job }: any) => {
   );
 };
 
-export default SingleJob;
+export default MyApplicationsSingleJob;

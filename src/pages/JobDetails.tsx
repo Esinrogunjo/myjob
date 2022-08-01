@@ -14,7 +14,7 @@ const jobDetails = () => {
   let { id } = useParams();
   let jobToSend = jobs[Number(id)] ? jobs[Number(id)] : jobs[0];
   return (
-    <div className="w-full">
+    <div className="w-full h-screen overflow-auto">
       <Header />
       <DetailsTop job={jobToSend} />
       <SingleJobDetail job={jobToSend} />
