@@ -70,8 +70,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between items-center border-t-[1px] border-t-lightGray mt-[1.875rem]">
-        <span className="my-[2.8125rem] ml-[7.5rem] text-lightGray leading-3 text-[0.65131875rem] md:leading-5 font-medium ">
-          Copyright © 2020
+        <span className="my-[2.8125rem] ml-[7.5rem] text-lightGray leading-3 text-[0.65131875rem] md:leading-5 font-medium text-lg ">
+          Copyright © 2022
         </span>
         <div className="hidden md:flex gap-x-[0.875rem] my-[2.8125rem] mr-28">
           <FacebookIcon height={"3.125rem"} width={"3.125rem"} />

@@ -83,7 +83,7 @@ const SingleJob = ({ job }: any) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-[auto, auto] mr-6 md:mr-0">
+      <div className="grid grid-cols-[auto_auto] mr-6 md:mr-0">
         <img
           src={summary.image}
           className="hidden md:block w-[12.0625rem] h-[12.0625rem] ml-10 mt-[2.875rem]"
