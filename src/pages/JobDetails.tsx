@@ -19,7 +19,7 @@ const jobDetails = () => {
       <DetailsTop job={jobToSend} />
       <SingleJobDetail job={jobToSend} />
       <div>
-        <h3 className="ml-[14.0625rem] mt-40 font-medium text-[2rem] text-[#424242] leading-[2.441875rem] tracking-[1px] ">
+        <h3 className="ml-10 md:ml-[14.0625rem] md:mt-40 font-medium text-[2rem] text-[#424242] leading-[2.441875rem] tracking-[1px] ">
           Related Jobs search
         </h3>
 

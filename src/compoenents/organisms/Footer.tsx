@@ -28,7 +28,7 @@ const Footer = () => {
           <span className=" font-normal text-sm leading-[0.875rem] md:text-xl md:leading-6 ">
             Recruitment
           </span>
-          <div className=" mt-5 flex flex-col text-sm leading-3 text-lightGray md:leading-5 md:text-[18px] gap-y-2">
+          <div className=" mt-5 flex flex-col text-sm leading-3 text-white md:text-lightGray md:leading-5 md:text-[18px] gap-y-2">
             <span>Become Affiliate</span>
             <span>Go Unlimited</span>
             <span>Services</span>
@@ -38,7 +38,7 @@ const Footer = () => {
           <span className="font-normal text-sm leading-[0.875rem] md:text-xl md:leading-6">
             Major Careers
           </span>
-          <div className="mt-5 flex flex-col text-sm leading-3 text-lightGray md:leading-5 md:text-[18px] gap-y-2">
+          <div className="mt-5 flex flex-col text-sm leading-3 text-white md:text-lightGray md:leading-5 md:text-[18px] gap-y-2">
             <span>Business Stories</span>
             <span>Learning</span>
             <span>Social Media</span>
@@ -48,7 +48,7 @@ const Footer = () => {
           <span className="font-normal text-sm leading-[0.875rem] md:text-xl md:leading-6 ">
             Most recruiting companies
           </span>
-          <div className="mt-5 flex flex-col text-sm leading-3 text-lightGray md:leading-5 md:text-[18px] gap-y-2">
+          <div className="mt-5 flex flex-col text-sm leading-3 text-white md:text-lightGray md:leading-5 md:text-[18px] gap-y-2">
             <span>Design Systems</span>
             <span>Themes &amp; Templates</span>
             <span>Mockups</span>
@@ -61,7 +61,7 @@ const Footer = () => {
           <span className="font-normal text-sm leading-[0.875rem] md:text-xl md:leading-6 ">
             Who got jobs here
           </span>
-          <div className="mt-5 flex flex-col text-sm leading-3 text-lightGray md:leading-5 md:text-[18px] gap-y-2">
+          <div className="mt-5 flex flex-col text-sm leading-3 text-white md:text-lightGray md:leading-5 md:text-[18px] gap-y-2">
             <span>License</span>
             <span>Refund Policy</span>
             <span>About Us</span>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between items-center border-t-[1px] border-t-lightGray mt-[1.875rem]">
-        <span className="my-[2.8125rem] ml-[7.5rem] text-lightGray leading-3 text-[0.65131875rem] md:leading-5 font-medium text-lg ">
+        <span className="my-[2.8125rem] ml-[4.125rem] md:ml-[7.5rem]  text-white md:text-lightGray leading-3 text-[0.65131875rem] md:leading-5 font-medium text-2xl ">
           Copyright © 2022
         </span>
         <div className="hidden md:flex gap-x-[0.875rem] my-[2.8125rem] mr-28">
