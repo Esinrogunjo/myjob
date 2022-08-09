@@ -1,13 +1,12 @@
 import React from "react";
+import LogoContactSmall from "../atoms/vectors/contact/LogoContactSmall";
 import LocationIcon from "../atoms/vectors/LocationIcon";
 
 const ContactTop = () => {
   return (
-    <div
-      className="grid mx-[9.375rem] my-[5.5rem]"
-      style={{ gridTemplateColumns: "auto auto" }}
-    >
-      <div className="flex flex-col gap-y-[1.0625rem] text-primary">
+    <div className=" flex flex-col md:grid md:grid-cols-[auto_auto] md:mx-[9.375rem] md:my-[5.5rem]">
+      <LogoContactSmall className="mx-auto mt-9 md:hidden" />
+      <div className="flex ml-10 md:ml-0 flex-col  gap-y-[1.0625rem] text-primary">
         <span className="font-semibold text-5xl leading-[3.625rem] tracking-[1.5px] ">
           CONTACT US
         </span>
@@ -17,7 +16,7 @@ const ContactTop = () => {
           speaking to us as easy as possible.
         </span>
       </div>
-      <div className="text-baseText bg-primary rounded-[0.625rem] p-6  w-[29.125rem]">
+      <div className="text-baseText bg-primary md:rounded-[0.625rem] p-6  md:w-[29.125rem] w-full">
         <span className="3.625 text-2xl font-bold">Where you can find us</span>
         <div className="flex flex-col text-xl font-medium leading-[1.5125rem]">
           <div className="flex mr-[0.6875rem]">
